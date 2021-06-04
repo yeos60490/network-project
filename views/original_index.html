@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Baseball game</title>
+  </head>
+  <body>
+    네트워크 2조
+    메인페이지 입니다<br/>
+    제출 할 숫자 :
+    <input type = "text" id = "user" name = "user" size = "12" maxlength= "4" required minlength= "4", value = "">
+    <button id="btn_pitch" value = 'Pitch' onclick = pitch()>Pitch</button>
+    <button value = 'Restart' onclick = reset()>Restart</button><br/>
+    <div id="board">
+    </div>
+
+    <script>
+      el = document.getElementById('board');
+      user_num = document.getElementById('user');
+      var rand_num=0;
+      window.onload = function() {init();}
+      function init(){
+        el.innerHTML="";
+        user_num.value="";
+        fetch("http://211.253.26.206:3000/random")
+        .then(response => response.json())      
+        .then(data => {
+          rand_num=data.number;
+          console.log("정답: "+rand_num);
+        })
+        .catch(error => console.log(error));
+
+        }
+      var try_cnt=0;
+      var out_cnt=0;
+      function pitch() {
+        var user = document.getElementById("user").value;
+        console.log(parseInt(user))
+        var chkStyle = /[0-9]/ ;  
+        if(chkStyle.test(user)){
+          if(user.length!=4){
+            alert("4자리 숫자를 입력해주세요.");
+            user_num.value="";
+            return;
+          }
+        }else{
+            alert("4자리 숫자를 입력해주세요.");
+            user_num.value="";
+            return;
+        }
+        fetch("http://211.253.26.206:3000/result?user="+user+"&base="+rand_num)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(data => {
+          var strike=data.strike;
+          var ball=data.ball;
+          var out=parseInt(data.out);
+          var win=parseInt(data.win);
+          out_cnt=out_cnt+out;
+          try_cnt=try_cnt+1;
+          alert(try_cnt+"번째 시도: "+strike+" strike, "+ball+" ball")
+          var state=try_cnt+"번째 시도: "+strike+" strike, "+ball+" ball";
+          el.innerHTML += "<span class='user_num'>입력 숫자: "+user+"</span>\t\t<span class='result'><b>"+state+"</b></span><br>";
+          if(win==1){
+            alert("맞았습니다!");
+            el.innerHTML += "<span class='result'><b>WIN!</b></span><br>";
+          }
+          if(out_cnt==3){
+            alert("아웃! 정답은 "+rand_num+" 입니다.");
+            reset();
+          }
+          if(try_cnt==10){
+            alert("실패! 기회를 모두 사용하였습니다. 정답은 "+rand_num+" 입니다.");
+            reset();
+          }
+          user_num.value="";
+        })
+        .catch(error => console.log(error));
+      }
+      function reset(){
+        init();
+      }
+      var input = document.getElementById("user");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("btn_pitch").click();
+        }
+      });
+      
+    </script>
+  </body>
+</html>

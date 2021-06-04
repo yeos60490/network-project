@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Baseball</title>
+    <!-- Font -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playball&display=swap"
+    rel="stylesheet"
+  />
+ 
+  <link href="https://i.pinimg.com/originals/19/d4/5e/19d45ef9e87ac9fdbb9298b0308e0a5a.png" rel="icon" type="image/x-icon" />
+ 
+ <style>
+   body {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: #fff;
+  }
+  
+  form {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -10;
+  }
+  
+  #bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  /* Header */
+  
+  .header_element {
+    margin: 3% 3% 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+  
+  }
+  
+  /* Popup Box */
+  .hover_bkgr {
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+  }
+  
+  .hover_bkgr .vertCenter {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .hover_bkgr>div {
+    background-color: #111;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+  }
+  
+  .popupCloseButton {
+    background-color: #111;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .popupCloseButton:hover {
+    background-color: #ccc;
+  }
+  
+  .trigger_popup {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .howToPlayText {
+    text-align: left;
+  }
+  
+  /* Title */
+  .title {
+    font-family: "Playball", cursive;
+    font-size: 4rem;
+    padding: 0% 15% 1%;
+    display: inline-block;
+    margin-bottom: 1%;
+  }
+  
+  /* Input */
+  .input {
+    margin-left: 10px;
+    height: 40px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    background-color: rgba(46, 49, 49, 0.5);
+    color: #fff;
+    width: 81px;
+  }
+  
+  .inputBox {
+    background-color: rgba(51, 51, 170, 0.2);
+    color: #fff;
+    font-size: 1.5rem;
+    width: 250px;
+    display: inline-block;
+  }
+  
+  #nameInput {
+    border-radius: 15px;
+  }
+  
+  #numInputText {
+    font-size: 1.8rem;
+  }
+  
+  #numberInputForm {
+    display: none;
+  }
+  
+  #buttonNumberInput {
+    background-color: #da0463;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.6rem;
+    width: 170px;
+    height: 60px;
+    display: inline-block;
+  }
+  
+  .numInputBtns {
+    line-height: 3;
+  }
+  
+  /* Number Buttons */
+  .nums {
+    outline: none;
+    border: 2px solid #404b69;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 900;
+    color: #da0463;
+    text-shadow: 3px 0 #dbedf3;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+  }
+  
+  .nums:hover {
+    background-color: #e7f2f8;
+  }
+  
+  .nums:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Card */
+  table {
+    margin: auto;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 1% 2%;
+    border-radius: 5%;
+    position: relative;
+  }
+  
+  .card-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px;
+  }
+  
+  .guess {
+    background-color: rgba(189, 195, 199, 0.8);
+    color: #da0463;
+  }
+  
+  .card.guess{
+    overflow: auto;
+  }
+  #results{
+    border-spacing: 30px 0;
+  }
+  td#results{
+    padding: 10px 0;
+    width: 120px;
+    border-right: 1px solid;
+  
+  }
+  
+  
+  td:last-child {
+    border-right: none;
+  }
+  
+  .scoreboard {
+    background-color: rgba(46, 49, 49, 0.9);
+    height: 200px;
+  }
+  
+  .scoreIdentifier {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .bulb {
+    height: 50px;
+    width: 50px;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 10px 5px;
+  }
+  
+  #footer {
+    font-size: 1.5rem;
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .scoreboard {
+      display: none;
+    }
+  }
+ </style>
+  </head>
+  <body>
+    <div id="bg">
+      <img src="https://static.vecteezy.com/system/resources/previews/000/236/108/original/baseball-stadium-background-vector.jpg" alt="background-img" style="opacity:0.5;"/>
+    </div>
+    <a href=""><h1 class="title">Number Baseball</h1></a>
+    <form id="numberInputForm" style="display: block;">
+        <p id="numInputText">Guess Your Number</p>
+        <div id="buttonNumberInput" class="input inputBox"></div>
+        <div class="numInputBtns">
+        <button class="input" id="numInputButton" type="button" onclick="getResultAddToArray(randomNum);">
+          OK
+        </button>
+        <button id="resetButton" class="input" type="button" onclick="resetInputNumber()">
+          Clear
+      </button></div>
+      
+      </form>
+
+    <div class="firstRow">
+      <button class="no1 nums">1</button>
+      <button class="no2 nums">2</button>
+      <button class="no3 nums">3</button>
+      <button class="no4 nums">4</button>
+      <button class="no5 nums">5</button>
+    </div>
+    <div class="secondRow">
+      <button class="no6 nums">6</button>
+      <button class="no7 nums">7</button>
+      <button class="no8 nums">8</button>
+      <button class="no9 nums">9</button>
+      <button class="no0 nums">0</button>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <div class="scoreboard card">
+            <h4 class="card-header">Scoreboard</h4>
+            <table>
+              <tr class="ballLight">
+                <td class="scoreIdentifier">B</td>
+                <td><div class="bulb"></div></td>
+                <td><div class="bulb"></div></td>
+                <td><div class="bulb"></div></td>
+                <td><div class="bulb"></div></td>
+              </tr>
+              <tr class="strikeLight">
+                <td class="scoreIdentifier">S</td>
+                <td><div class="bulb"></div></td>
+                <td><div class="bulb"></div></td>
+                <td><div class="bulb"></div></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        <td>
+          <div class="guess card">
+            <h4 class="card-header">Guess History</h4>
+            <table id="results"></table>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script>
+      var outcome; // string that shows number of strikes and balls
+var outcomeNum = 0; // integer to increase outcome array
+var resultArray = Array(); // empty array used to store outcome.
+
+var randomNum = 0;
+const btnNumInput = document.getElementById("buttonNumberInput");
+const results = document.getElementById("results");
+const numInputText = document.getElementById("numInputText");
+const numInputForm = document.getElementById("numberInputForm");
+
+window.onload = function() {ranNumList();}
+// Create List of 4 digit distinct number
+function ranNumList() {
+    fetch("http://211.253.26.206:3000/random")
+    .then(response => response.json())      
+    .then(data => {
+        randomNum=data.number;
+      console.log("정답: "+randomNum);
+    })
+    .catch(error => console.log(error));
+}
+var strike = 0;
+var ball = 0;
+ var out_cnt=0;
+  var try_cnt=0;
+  var win=0;
+// Take Input and get result. Add result to array
+async function getResultAddToArray(ansString) {
+  
+  var guessString = btnNumInput.innerHTML;
+  if(guessString.length < 4){
+    alert("4자리 숫자를 입력하세요");
+    resetInputNumber();
+    return;
+  }
+  resetLight();
+  await fetch("http://211.253.26.206:3000/result?user="+guessString+"&base="+randomNum)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(data => {
+          strike=data.strike;
+          ball=data.ball;
+          out=parseInt(data.out);
+          win=parseInt(data.win);
+          out_cnt=out_cnt+out;
+          try_cnt=try_cnt+1;
+          outcome = "S: " + strike + " B: " + ball;
+          if (outcome && guessString.length == 4) {
+            resultArray[outcomeNum] = outcome + " || " + guessString;
+
+            outcomeNum++;
+          }
+          alert(try_cnt+"번째 시도: "+strike+" strike, "+ball+" ball")
+          var state=try_cnt+"번째 시도: "+strike+" strike, "+ball+" ball";
+          if(win==1){
+            alert("You Win!");
+            window.location.reload();
+          }
+          if(out_cnt==3){
+            alert("아웃! 정답은 "+randomNum+" 입니다.");
+            window.location.reload();
+          }
+          if(try_cnt==10){
+            alert("실패! 기회를 모두 사용하였습니다. 정답은 "+randomNum+" 입니다.");
+            window.location.reload();
+          }
+        })
+        .catch(error => console.log(error));
+  btnNumInput.innerHTML = "";
+  changeLight(parseInt(ball), parseInt(strike));
+  inputArray = Array();
+  resultTable();
+}
+
+
+// Change scoreboard light
+function changeLight(numBall, numStrike) {
+  for (var i = 0; i < numStrike; i++) {
+    document.querySelectorAll(".strikeLight .bulb")[i].style.backgroundColor =
+      "#39FF14";
+  }
+  for (var i = 0; i < numBall; i++) {
+    document.querySelectorAll(".ballLight .bulb")[i].style.backgroundColor =
+      "red";
+  }
+}
+
+// Turn light back to black
+function resetLight() {
+  var bulbsLength = document.querySelectorAll(".bulb").length;
+  for (var i = 0; i < bulbsLength; i++)
+    document.querySelectorAll(".bulb")[i].style.backgroundColor = "black";
+}
+
+// Display Array to result box
+function displayResultArray() {
+  let e = "<hr/>";
+  for (var y = 0; y < resultArray.length; y++) {
+    e += `${resultArray[y]}<br/>`;
+  }
+  results.innerHTML = e;
+  return resultArray;
+}
+
+// array storing input by numbered buttons
+var inputArray = Array();
+for (var i = 0; i < document.querySelectorAll(".nums").length; i++) {
+  document.querySelectorAll(".nums")[i].addEventListener("click", function () {
+    var clickNum = this.innerHTML;
+    inputArray.push(clickNum);
+    if (inputArray.length > 4) {
+      inputArray.shift();
+    }
+    inputArray = inputArray.slice(0, 4);
+    btnNumInput.innerHTML = inputArray.join("").toString();
+  });
+}
+
+function resetInputNumber() {
+  let emptyArray = Array();
+  btnNumInput.innerHTML = emptyArray;
+  inputArray = Array();
+}
+
+// Create pop-up for game rules
+window.addEventListener("load", function () {
+  document
+    .querySelector(".trigger_popup")
+    .addEventListener("click", function () {
+      document.querySelector(".hover_bkgr").style.display = "block";
+    });
+  document.querySelector(".hover_bkgr").addEventListener("click", function () {
+    document.querySelector(".hover_bkgr").style.display = "none";
+  });
+  document
+    .querySelector(".popupCloseButton")
+    .addEventListener("click", function () {
+      document.querySelector(".hover_bkgr").style.display = "none";
+    });
+});
+
+
+// Creates a table in guess history with number input and result
+async function resultTable() {
+  var tableBody = document.getElementById("results"),
+    newRow,
+    newCell1,
+    newCell2;
+  tableBody.innerHTML = "";
+  for (var i = 0; i < resultArray.length; i++) {
+    newRow = document.createElement("tr");
+    tableBody.appendChild(newRow);
+
+    var cols = resultArray[i].split("||");
+
+    newCell1 = document.createElement("td");
+    newCell1.textContent = cols[0]
+    newRow.appendChild(newCell1);
+    newCell2 = document.createElement("td");
+    newCell2.textContent = cols[1]
+    newRow.appendChild(newCell2);
+
+  }
+  resultHeader();
+}
+
+// Create table header for guess history table
+function resultHeader() {
+  var tableBody = document.getElementById("results");
+  var header = tableBody.createTHead();
+  var headerRow = header.insertRow(0);
+  var headCell1 = headerRow.insertCell(0);
+  var headCell2 = headerRow.insertCell(1);
+  headCell1.innerHTML = "Result";
+  headCell2.innerHTML = "Your Number";
+}
+
+    </script>
+  </body>
+</html>
