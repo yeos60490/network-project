@@ -299,6 +299,9 @@
         </button>
         <button id="resetButton" class="input" type="button" onclick="resetInputNumber()">
           Clear
+      </button>
+      <button class="input" id="HintButton" type="button" onclick="getHint();">
+        Hint
       </button></div>
       
       </form>
@@ -365,7 +368,7 @@ function ranNumList() {
     .then(response => response.json())      
     .then(data => {
         randomNum=data.number;
-      console.log("정답: "+randomNum);
+      console.log("정답: "+randomNum); //테스트용
     })
     .catch(error => console.log(error));
 }
@@ -422,7 +425,30 @@ async function getResultAddToArray(ansString) {
   inputArray = Array();
   resultTable();
 }
-
+function getHint(){
+  fetch("http://211.253.26.206:3000/hint?numb="+randomNum)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(data => {
+          digit=parseInt(data.digit);
+          num=data.num;
+          if(digit==0){
+            digit="첫";
+          }
+          else if(digit==1){
+            digit="두";
+          }
+          else if(digit==2){
+            digit="세";
+          }
+          else{
+            digit="네";
+          }
+          alert("**********HINT**********\n"+digit+"번째 숫자는 "+num+" 입니다.");
+        })
+        .catch(error => console.log(error));
+}
 
 // Change scoreboard light
 function changeLight(numBall, numStrike) {

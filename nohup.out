@@ -1043,3 +1043,885 @@ TypeError: Cannot read property '3' of undefined
 Express server has started on port 3000
 random number: 5137
 random number: 1792
+random number: 4195
+random number: 3586
+result
+{ user: '3849', base: '3586' }
+3849
+3586
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '3509', base: '3586' }
+3509
+3586
+strike : 2, ball : 0, out : 0, win : 0
+result
+{ user: '3809', base: '3586' }
+3809
+3586
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '3851', base: '3586' }
+3851
+3586
+strike : 1, ball : 2, out : 0, win : 0
+result
+{ user: '2853', base: '3586' }
+2853
+3586
+strike : 0, ball : 3, out : 0, win : 0
+result
+{ user: '7853', base: '3586' }
+7853
+3586
+strike : 0, ball : 3, out : 0, win : 0
+result
+{ user: '6853', base: '3586' }
+6853
+3586
+strike : 0, ball : 4, out : 0, win : 0
+result
+{ user: '3685', base: '3586' }
+3685
+3586
+strike : 2, ball : 2, out : 0, win : 0
+result
+{ user: '6385', base: '3586' }
+6385
+3586
+strike : 1, ball : 3, out : 0, win : 0
+result
+{ user: '3865', base: '3586' }
+3865
+3586
+strike : 1, ball : 3, out : 0, win : 0
+random number: 9732
+random number: 3421
+random number: 5476
+hint
+TypeError: Cannot read property '1' of undefined
+    at /root/network-nodejs/router/main.js:84:53
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/network-nodejs/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/network-nodejs/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+    at /root/network-nodejs/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/network-nodejs/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/network-nodejs/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/root/network-nodejs/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+hint
+TypeError: Cannot read property '0' of undefined
+    at /root/network-nodejs/router/main.js:83:47
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/network-nodejs/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/network-nodejs/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+    at /root/network-nodejs/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/network-nodejs/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/network-nodejs/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/root/network-nodejs/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+hint
+TypeError: Cannot read property '3' of undefined
+    at /root/network-nodejs/router/main.js:86:40
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/network-nodejs/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/network-nodejs/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+    at /root/network-nodejs/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/network-nodejs/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/network-nodejs/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/root/network-nodejs/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/root/network-nodejs/node_modules/express/lib/router/layer.js:95:5)
+hint
+hint
+hint
+Express server has started on port 3000
+hint
+Express server has started on port 3000
+random number: 9724
+random number: 1965
+random number: 6018
+random number: 1623
+random number: 1823
+random number: 1543
+random number: 2194
+random number: 1580
+random number: 8273
+random number: 3896
+random number: 5340
+random number: 1736
+random number: 6738
+hint
+random number: 3482
+hint
+random number: 2740
+hint
+random number: 7182
+hint
+random number: 5940
+hint
+hint
+result
+{ user: '5321', base: '5940' }
+5321
+5940
+strike : 1, ball : 0, out : 0, win : 0
+random number: 1829
+random number: 7698
+random number: 6450
+random number: 2034
+random number: 4032
+random number: 1865
+random number: 1695
+hint
+Express server has started on port 3000
+random number: 8094
+random number: 8945
+Express server has started on port 3000
+random number: 4510
+hint
+random number: 6082
+random number: 3829
+random number: 3594
+result
+{ user: '4321', base: '3594' }
+4321
+3594
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1234', base: '3594' }
+1234
+3594
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '1235', base: '3594' }
+1235
+3594
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '3216', base: '3594' }
+3216
+3594
+strike : 1, ball : 0, out : 0, win : 0
+hint
+hint
+result
+{ user: '3254', base: '3594' }
+3254
+3594
+strike : 2, ball : 1, out : 0, win : 0
+result
+{ user: '5234', base: '3594' }
+5234
+3594
+strike : 1, ball : 2, out : 0, win : 0
+hint
+result
+{ user: '3524', base: '3594' }
+3524
+3594
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '3504', base: '3594' }
+3504
+3594
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '3514', base: '3594' }
+3514
+3594
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '3564', base: '3594' }
+3564
+3594
+strike : 3, ball : 0, out : 0, win : 0
+random number: 9285
+result
+{ user: '1234', base: '9285' }
+1234
+9285
+strike : 1, ball : 0, out : 0, win : 0
+hint
+result
+{ user: '3333', base: '9285' }
+3333
+9285
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '3333', base: '9285' }
+3333
+9285
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '3333', base: '9285' }
+3333
+9285
+strike : 0, ball : 0, out : 1, win : 0
+random number: 2735
+result
+{ user: '1234', base: '2735' }
+1234
+2735
+strike : 1, ball : 1, out : 0, win : 0
+hint
+result
+{ user: '1235', base: '2735' }
+1235
+2735
+strike : 2, ball : 1, out : 0, win : 0
+result
+{ user: '1675', base: '2735' }
+1675
+2735
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '2135', base: '2735' }
+2135
+2735
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '2145', base: '2735' }
+2145
+2735
+strike : 2, ball : 0, out : 0, win : 0
+result
+{ user: '2935', base: '2735' }
+2935
+2735
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '2035', base: '2735' }
+2035
+2735
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '2435', base: '2735' }
+2435
+2735
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '2735', base: '2735' }
+2735
+2735
+strike : 4, ball : 0, out : 0, win : 1
+random number: 7426
+result
+{ user: '1234', base: '7426' }
+1234
+7426
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1235', base: '7426' }
+1235
+7426
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '1237', base: '7426' }
+1237
+7426
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1234', base: '7426' }
+1234
+7426
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '6780', base: '7426' }
+6780
+7426
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1235', base: '7426' }
+1235
+7426
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '5378', base: '7426' }
+5378
+7426
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '4357', base: '7426' }
+4357
+7426
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '9807', base: '7426' }
+9807
+7426
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '9850', base: '7426' }
+9850
+7426
+strike : 0, ball : 0, out : 1, win : 0
+random number: 7930
+random number: 8749
+random number: 7193
+random number: 1675
+hint
+hint
+hint
+random number: 9216
+random number: 4361
+result
+{ user: '1234', base: '4361' }
+1234
+4361
+strike : 0, ball : 3, out : 0, win : 0
+result
+{ user: '1235', base: '4361' }
+1235
+4361
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1345', base: '4361' }
+1345
+4361
+strike : 1, ball : 2, out : 0, win : 0
+result
+{ user: '1238', base: '4361' }
+1238
+4361
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '6789', base: '4361' }
+6789
+4361
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '3895', base: '4361' }
+3895
+4361
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '1239', base: '4361' }
+1239
+4361
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1357', base: '4361' }
+1357
+4361
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '1890', base: '4361' }
+1890
+4361
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '5432', base: '4361' }
+5432
+4361
+strike : 0, ball : 2, out : 0, win : 0
+random number: 3078
+result
+{ user: '3078', base: '3078' }
+3078
+3078
+strike : 4, ball : 0, out : 0, win : 1
+random number: 2501
+random number: 6590
+result
+{ user: '1234', base: '6590' }
+1234
+6590
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '5678', base: '6590' }
+5678
+6590
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '7856', base: '6590' }
+7856
+6590
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1534', base: '6590' }
+1534
+6590
+strike : 1, ball : 0, out : 0, win : 0
+result
+{ user: '1264', base: '6590' }
+1264
+6590
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '6523', base: '6590' }
+6523
+6590
+strike : 2, ball : 0, out : 0, win : 0
+result
+{ user: '6590', base: '6590' }
+6590
+6590
+strike : 4, ball : 0, out : 0, win : 1
+random number: 2391
+result
+{ user: '1234', base: '2391' }
+1234
+2391
+strike : 0, ball : 3, out : 0, win : 0
+result
+{ user: '5678', base: '2391' }
+5678
+2391
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '5679', base: '2391' }
+5679
+2391
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '5671', base: '2391' }
+5671
+2391
+strike : 1, ball : 0, out : 0, win : 0
+result
+{ user: '9321', base: '2391' }
+9321
+2391
+strike : 2, ball : 2, out : 0, win : 0
+result
+{ user: '9231', base: '2391' }
+9231
+2391
+strike : 1, ball : 3, out : 0, win : 0
+result
+{ user: '3921', base: '2391' }
+3921
+2391
+strike : 1, ball : 3, out : 0, win : 0
+result
+{ user: '2391', base: '2391' }
+2391
+2391
+strike : 4, ball : 0, out : 0, win : 1
+random number: 2695
+random number: 6583
+random number: 7046
+random number: 5263
+random number: 8415
+random number: 6089
+random number: 4861
+result
+{ user: '1234', base: '4861' }
+1234
+4861
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '5621', base: '4861' }
+5621
+4861
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '7829', base: '4861' }
+7829
+4861
+strike : 1, ball : 0, out : 0, win : 0
+result
+{ user: '9120', base: '4861' }
+9120
+4861
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '7541', base: '4861' }
+7541
+4861
+strike : 1, ball : 1, out : 0, win : 0
+hint
+result
+{ user: '4861', base: '4861' }
+4861
+4861
+strike : 4, ball : 0, out : 0, win : 1
+random number: 3687
+result
+{ user: '1234', base: '3687' }
+1234
+3687
+strike : 0, ball : 1, out : 0, win : 0
+random number: 3764
+result
+{ user: '1234', base: '3764' }
+1234
+3764
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '1289', base: '3764' }
+1289
+3764
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '1289', base: '3764' }
+1289
+3764
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '1289', base: '3764' }
+1289
+3764
+strike : 0, ball : 0, out : 1, win : 0
+random number: 8704
+random number: 6107
+result
+{ user: '1234', base: '6107' }
+1234
+6107
+strike : 0, ball : 1, out : 0, win : 0
+random number: 7063
+random number: 6198
+result
+{ user: '6198', base: '6198' }
+6198
+6198
+strike : 4, ball : 0, out : 0, win : 1
+random number: 1287
+result
+{ user: '1234', base: '1287' }
+1234
+1287
+strike : 2, ball : 0, out : 0, win : 0
+hint
+random number: 7945
+result
+{ user: '7945', base: '7945' }
+7945
+7945
+strike : 4, ball : 0, out : 0, win : 1
+random number: 5806
+random number: 3657
+hint
+result
+{ user: '3726', base: '3657' }
+3726
+3657
+strike : 1, ball : 2, out : 0, win : 0
+result
+{ user: '5049', base: '3657' }
+5049
+3657
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '3872', base: '3657' }
+3872
+3657
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '4953', base: '3657' }
+4953
+3657
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '0987', base: '3657' }
+0987
+3657
+strike : 1, ball : 0, out : 0, win : 0
+result
+{ user: '1349', base: '3657' }
+1349
+3657
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '5038', base: '3657' }
+5038
+3657
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '4938', base: '3657' }
+4938
+3657
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '1278', base: '3657' }
+1278
+3657
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '4983', base: '3657' }
+4983
+3657
+strike : 0, ball : 1, out : 0, win : 0
+random number: 3269
+random number: 1896
+result
+{ user: '2345', base: '1896' }
+2345
+1896
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '0000', base: '1896' }
+0000
+1896
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '3333', base: '1896' }
+3333
+1896
+strike : 0, ball : 0, out : 1, win : 0
+random number: 2790
+result
+{ user: '5094', base: '2790' }
+5094
+2790
+strike : 1, ball : 1, out : 0, win : 0
+hint
+result
+{ user: '9450', base: '2790' }
+9450
+2790
+strike : 1, ball : 1, out : 0, win : 0
+random number: 1268
+random number: 9842
+result
+{ user: '1234', base: '9842' }
+1234
+9842
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '5678', base: '9842' }
+5678
+9842
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '5123', base: '9842' }
+5123
+9842
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '3469', base: '9842' }
+3469
+9842
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '3470', base: '9842' }
+3470
+9842
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '9328', base: '9842' }
+9328
+9842
+strike : 1, ball : 2, out : 0, win : 0
+result
+{ user: '0328', base: '9842' }
+0328
+9842
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '9318', base: '9842' }
+9318
+9842
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '9327', base: '9842' }
+9327
+9842
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '9538', base: '9842' }
+9538
+9842
+strike : 1, ball : 1, out : 0, win : 0
+random number: 7906
+result
+{ user: '1234', base: '7906' }
+1234
+7906
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '3456', base: '7906' }
+3456
+7906
+strike : 1, ball : 0, out : 0, win : 0
+result
+{ user: '7890', base: '7906' }
+7890
+7906
+strike : 1, ball : 2, out : 0, win : 0
+result
+{ user: '0231', base: '7906' }
+0231
+7906
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '5609', base: '7906' }
+5609
+7906
+strike : 1, ball : 2, out : 0, win : 0
+result
+{ user: '1278', base: '7906' }
+1278
+7906
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '1238', base: '7906' }
+1238
+7906
+strike : 0, ball : 0, out : 1, win : 0
+result
+{ user: '5769', base: '7906' }
+5769
+7906
+strike : 0, ball : 3, out : 0, win : 0
+hint
+result
+{ user: '5806', base: '7906' }
+5806
+7906
+strike : 2, ball : 0, out : 0, win : 0
+result
+{ user: '9706', base: '7906' }
+9706
+7906
+strike : 2, ball : 2, out : 0, win : 0
+random number: 6052
+hint
+result
+{ user: '1234', base: '6052' }
+1234
+6052
+strike : 0, ball : 1, out : 0, win : 0
+result
+{ user: '5678', base: '6052' }
+5678
+6052
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '5087', base: '6052' }
+5087
+6052
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '1087', base: '6052' }
+1087
+6052
+strike : 1, ball : 0, out : 0, win : 0
+result
+{ user: '6053', base: '6052' }
+6053
+6052
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '6052', base: '6052' }
+6052
+6052
+strike : 4, ball : 0, out : 0, win : 1
+random number: 5832
+result
+{ user: '1234', base: '5832' }
+1234
+5832
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '5678', base: '5832' }
+5678
+5832
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '1638', base: '5832' }
+1638
+5832
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '2574', base: '5832' }
+2574
+5832
+strike : 0, ball : 2, out : 0, win : 0
+hint
+result
+{ user: '5842', base: '5832' }
+5842
+5832
+strike : 3, ball : 0, out : 0, win : 0
+result
+{ user: '5843', base: '5832' }
+5843
+5832
+strike : 2, ball : 1, out : 0, win : 0
+result
+{ user: '5823', base: '5832' }
+5823
+5832
+strike : 2, ball : 2, out : 0, win : 0
+result
+{ user: '5832', base: '5832' }
+5832
+5832
+strike : 4, ball : 0, out : 0, win : 1
+random number: 3926
+result
+{ user: '6789', base: '3926' }
+6789
+3926
+strike : 0, ball : 2, out : 0, win : 0
+random number: 3457
+result
+{ user: '1234', base: '3457' }
+1234
+3457
+strike : 0, ball : 2, out : 0, win : 0
+result
+{ user: '1234', base: '3457' }
+1234
+3457
+strike : 0, ball : 2, out : 0, win : 0
+random number: 1095
+result
+{ user: '1234', base: '1095' }
+1234
+1095
+strike : 1, ball : 0, out : 0, win : 0
+result
+{ user: '5678', base: '1095' }
+5678
+1095
+strike : 0, ball : 1, out : 0, win : 0
+random number: 9650
+random number: 8153
+result
+{ user: '1234', base: '8153' }
+1234
+8153
+strike : 0, ball : 2, out : 0, win : 0
+hint
+result
+{ user: '5678', base: '8153' }
+5678
+8153
+strike : 0, ball : 2, out : 0, win : 0
+hint
+hint
+hint
+hint
+hint
+result
+{ user: '8250', base: '8153' }
+8250
+8153
+strike : 2, ball : 0, out : 0, win : 0
+hint
+result
+{ user: '1259', base: '8153' }
+1259
+8153
+strike : 1, ball : 1, out : 0, win : 0
+result
+{ user: '8153', base: '8153' }
+8153
+8153
+strike : 4, ball : 0, out : 0, win : 1
+random number: 6581
+random number: 3264
+random number: 8953
+random number: 1576
+random number: 1735
+random number: 7839
+random number: 9271
+random number: 4806
+random number: 5306
+random number: 8052

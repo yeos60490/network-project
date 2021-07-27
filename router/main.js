@@ -85,7 +85,8 @@ module.exports = function(app)
         else if(rand === 2) ret = `**${req.query.numb[2]}*`;
         else ret = `***${req.query.numb[3]}`;
         res.send({
-          "ret" : ret
+          "digit" : rand,
+          "num" : req.query.numb[rand]
         })
       })
     );
