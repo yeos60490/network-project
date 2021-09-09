@@ -20,6 +20,16 @@
 - ubuntu 18
 
 ------
+### web
+
+<img width="80%" src="https://user-images.githubusercontent.com/54983764/132700880-1585a705-0663-4a5f-b4c5-53636e3a7662.png"/>
+<img width="80%" src="https://user-images.githubusercontent.com/54983764/132701033-cadc8cdd-2578-4bf0-a88f-b4e443fcfba5.png"/>
+<img width="80%" src="https://user-images.githubusercontent.com/54983764/132701077-af1f4d05-0d3d-4393-bbd7-19fccb15b7aa.png"/>
+<img width="80%" src="https://user-images.githubusercontent.com/54983764/132701142-1c905cb4-eddb-476e-b64f-81a1978615dc.png"/>
+
+
+------
+
 ### install
 - node, npm install
 
