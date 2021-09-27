@@ -19,6 +19,12 @@
 - javascript
 - ubuntu 18
 
+
+### 나의 역할
+- 서버 설계 및 구축
+- 백엔드 개발 
+- Wireshark 패킷 분석
+
 ------
 ### web
 
